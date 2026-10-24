@@ -18,6 +18,6 @@ fi
 
 if  (( $1 % 2 == 0 )) ; then
    echo "$1 IS EVEN"
-esle 
-   echo "$! IS ODD"
+else  
+   echo "$1 IS ODD"
 fi
