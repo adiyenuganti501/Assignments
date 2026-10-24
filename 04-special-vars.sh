@@ -1,6 +1,6 @@
 #!/bin/bash
 # Print who is running the script
-echo "Running as $whoami"
+echo "Running as : $(whoami)"
 # Print the current directory
 # Print the home directory
 # Print the PID of the script
