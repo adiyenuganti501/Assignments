@@ -17,5 +17,6 @@ echo "A random number is : $(shuf -i 1-100 -n 1)"
 # At the end, print how many seconds the script took to run
 #End time
 end_time=$(date +%s)
+echo "end time is $end_time"
 time_taken=$((end_time - start_time))
 echo "Script ran in : $time_taken "
