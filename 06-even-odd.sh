@@ -16,8 +16,8 @@ if [ $# -eq 0 ]; then
  exit 1
 fi
 
-if  (( $1%2 == 0 )) ; then
-  echo "$1 IS EVEN"
+if  (( $1 % 2 == 0 )) ; then
+   echo "$1 IS EVEN"
 esle 
- echo "$! IS ODD"
+   echo "$! IS ODD"
 fi
