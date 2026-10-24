@@ -15,3 +15,14 @@ if [ $1 -le 1 ] ; then
  echo "$1 is not a prime number"
  exit 1
 fi
+
+for (( i=2 ; i<$1 ;  i++))
+do 
+  if (( $1  % i == 0)) ; then
+   echo "$1 is not a prime number"
+   exit 0
+fi
+done 
+echo "$1 is prime number"
+
+
