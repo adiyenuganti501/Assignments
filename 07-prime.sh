@@ -10,3 +10,8 @@ if [ $# -eq 0 ] ; then
  echo "Enter a number to check prime number or not"
  exit 1
 fi
+
+if [ $1 -eq 0 ] || [ $1 -eq 1 ] ; then
+ echo "$1 is not a prime number"
+ exit 1
+fi
