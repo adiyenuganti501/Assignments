@@ -6,3 +6,8 @@
 # For any other day, print Weekday. Go to school/work.
 day_of_week=$(date +%A)
 echo "today is $day_of_week"
+
+if [ "$day_of_week" -eq "Saturday" ] || [ "$day_of_week" -eq "Sunday" ] ; then 
+  echo "Enjoy your holiday."
+fi
+
