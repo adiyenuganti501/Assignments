@@ -22,7 +22,9 @@ else
 fi
 # At the end, exit the script with code 0 if all commands succeeded, or 1 if any failed
 if [ $? -ne 0 ] ; then
+  echo "EXIT WITH 1"
   exit 1
 else 
+ echo "EXIT WITH 0"
  exit 0
 fi
