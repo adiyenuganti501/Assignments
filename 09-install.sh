@@ -13,3 +13,7 @@ if [ $user_id -ne 0 ] ; then
  echo "You are not a root user, Please run with root access"
  exit 1
 fi
+
+if [ -z $1 ] ; then 
+ echo "test"
+fi
