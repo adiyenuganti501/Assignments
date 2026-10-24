@@ -28,6 +28,7 @@ else
    echo "Nginx installed successfully"
   else
    echo "Nginx installation failed"
+  fi
 fi
 
 
