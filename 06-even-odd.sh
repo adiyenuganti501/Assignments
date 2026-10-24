@@ -1,14 +1,14 @@
 #!/bin/bash
 # Accepts a number as a command line argument
-echo "Enter a number"
-read number
-# Checks if the number is even or odd using the modulo operator
-if (( "$number" % 2 == 0 )) ; then 
- echo "$number IS EVEN"
-else 
- echo "$number IS ODD"
-fi
-# Prints the result
+# echo "Enter a number"
+# read number
+# # Checks if the number is even or odd using the modulo operator
+# if (( "$number" % 2 == 0 )) ; then 
+#  echo "$number IS EVEN"
+# else 
+#  echo "$number IS ODD"
+# fi
+# # Prints the result
 
 #Another way of writing
 if [ $# -eq 0 ]; then
