@@ -17,5 +17,18 @@ fi
 if [ -z $1 ] ; then 
  echo "Please pass package to Install"
  exit 1
-
 fi
+
+if nginx -v &>/dev/null; then
+ echo "print nginx is already installed "
+ exit 0
+else 
+  dnf install -y nginx
+  if [ $? -eq 0 ]; then
+   echo "Nginx installed successfully"
+  else
+   echo "Nginx installation failed"
+fi
+
+
+
