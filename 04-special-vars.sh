@@ -2,6 +2,7 @@
 # Print who is running the script
 echo "Running as : $(whoami)"
 # Print the current directory
+echo "Current directoory : $(pwd)"
 # Print the home directory
 # Print the PID of the script
 # Run sleep 10 in the background and print its PID
