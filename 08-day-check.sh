@@ -9,15 +9,8 @@ day_of_week=$(date +%A)
 
 if [ "$day_of_week" == "Saturday" ] || [ "$day_of_week" == "Sunday" ] ; then 
   echo "Enjoy your holiday."
-  exit 0
-fi
-
-if [ "$day_of_week" == "Monday" ] ; then 
-   echo "Start of the week. Let's go!"
-   exit 0
-fi
-
-if [ ! "$day_of_week" == "Monday" ] || [  ! "$day_of_week" == "Saturday" ] || [  ! "$day_of_week" == "Sunday" ] ; then
-  echo "Today is  $day_of_week, So Go to school/work."
-  exit 0
+elif [ "$day_of_week" == "Monday" ] ; then
+  echo "Start of the week. Let's go!"
+else 
+ echo "Today is $day_of_week, so go to school/work." 
 fi
