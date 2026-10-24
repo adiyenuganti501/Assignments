@@ -11,7 +11,7 @@ if [ $# -eq 0 ] ; then
  exit 1
 fi
 
-if [ $1 -eq 0 ] || [ $1 -eq 1 ] ; then
+if [ $1 >= 1 ] ; then
  echo "$1 is not a prime number"
  exit 1
 fi
