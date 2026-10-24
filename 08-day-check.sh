@@ -7,7 +7,7 @@
 day_of_week=$(date +%A)
 echo "today is $day_of_week"
 
-if [ "$day_of_week" -eq "Saturday" ] || [ "$day_of_week" -eq "Sunday" ] ; then 
+if [ "$day_of_week" == "Saturday" ] || [ "$day_of_week" == "Sunday" ] ; then 
   echo "Enjoy your holiday."
 fi
 
