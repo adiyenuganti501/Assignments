@@ -4,8 +4,8 @@ echo "Enter a number"
 read number
 # Checks if the number is even or odd using the modulo operator
 if (( "$number" % 2 == 0 )) ; then 
- echo "EVEN"
+ echo "$number IS EVEN"
 else 
- echo "ODD"
+ echo "$number IS ODD"
 fi
 # Prints the result
