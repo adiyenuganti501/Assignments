@@ -4,7 +4,7 @@ echo "Running as : $(whoami)"
 # Print the current directory
 echo "Current directoory : $(pwd)"
 # Print the home directory
-echo "Home directory is : $(HOME)"
+echo "Home directory is : $HOME"
 # Print the PID of the script
 
 # Run sleep 10 in the background and print its PID
