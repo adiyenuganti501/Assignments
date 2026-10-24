@@ -8,7 +8,7 @@ echo "Home directory is : $HOME"
 # Print the PID of the script
 echo "PID is : $$"
 # Run sleep 10 in the background and print its PID
-sleep 10
+sleep 10 &
 echo "background PID is : $!"
 # Print a random number between 1–100
 # At the end, print how many seconds the script took to run
