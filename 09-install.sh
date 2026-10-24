@@ -15,7 +15,7 @@ if [ $user_id -ne 0 ] ; then
 fi
 
 if [ -z $1 ] ; then 
- echo "test"
-else 
- echo "NA"
+ echo "Please pass package to Install"
+ exit 1
+
 fi
