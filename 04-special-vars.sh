@@ -11,4 +11,5 @@ echo "PID is : $$"
 sleep 10 &
 echo "background PID is : $!"
 # Print a random number between 1–100
+echo "shuf -i 1-100 -n 1"
 # At the end, print how many seconds the script took to run
