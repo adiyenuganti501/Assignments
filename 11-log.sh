@@ -1,22 +1,21 @@
 #!/bin/bash
 
-# Define log files
+# Creates a log file at /tmp/script.log
 log_folder="/tmp"
 log_file="$log_folder/script.log"
 error_log_file="$log_folder/script-errors.log"
 
-# Create or clear log files
-> "$log_file"
-> "$error_log_file"
+mkdir -p "$log_folder"
 
-# Run commands and redirect output
-ls /tmp >> "$log_file" 2>> "$error_log_file"
-ls /fakedir >> "$log_file" 2>> "$error_log_file"
-date >> "$log_file" 2>> "$error_log_file"
+# Redirects all success output to the log file
 
-# Display log contents
-echo "===== SUCCESS OUTPUT ====="
+# Redirects all error output to /tmp/script-errors.log
+# Runs three commands: ls /tmp, ls /fakedir, date
+# At the end, prints the contents of both log files
+
+ls /tmp >>"$log_file" 2>>"$error_log_file"
+ls /fakedir >>"$log_file" 2>>"$error_log_file"
+date >>"$log_file" 2>>"$error_log_file"
+
 cat "$log_file"
-
-echo "===== ERROR OUTPUT ====="
 cat "$error_log_file"
