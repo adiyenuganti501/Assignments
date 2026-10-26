@@ -12,9 +12,9 @@ mkdir -p "$log_folder"
 # Runs three commands: ls /tmp, ls /fakedir, date
 # At the end, prints the contents of both log files
 
-ls /tmp >>log_folder 2>>error_log_file
-ls /fakedir >>log_folder 2>>error_log_file
-date >>log_folder 2>>error_log_file
+ls /tmp >>$log_folder 2>>$error_log_file
+ls /fakedir >>$log_folder 2>>$error_log_file
+date >>$log_folder 2>>$error_log_file
 
-cat /tmp/log_folder
-cat /tmp/error_log_file
+cat "$log_folder"
+cat "$error_log_file"
