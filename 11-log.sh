@@ -4,6 +4,7 @@
 log_folder="/tmp"
 log_file="$log_folder/script.log"
 error_log_file="$log_folder/script-errors.log"
+
 mkdir -p "$log_folder"
 
 # Redirects all success output to the log file
@@ -13,7 +14,7 @@ mkdir -p "$log_folder"
 # At the end, prints the contents of both log files
 
 ls /tmp >>"$log_file" 2>>"$error_log_file"
-ls /fakedir>>"$log_file" 2>>"$error_log_file"
+ls /fakedir >>"$log_file" 2>>"$error_log_file"
 date >>"$log_file" 2>>"$error_log_file"
 
 cat "$log_file"
