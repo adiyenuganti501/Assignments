@@ -5,7 +5,10 @@ log_folder="/tmp"
 log_file="$log_folder/script.log"
 error_log_file="$log_folder/script-errors.log"
 
-mkdir -p "$log_folder"
+#mkdir -p "$log_folder"
+> "$log_file"
+> "$error_log_file"
+
 
 # Redirects all success output to the log file
 
