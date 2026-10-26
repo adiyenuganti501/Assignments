@@ -2,7 +2,7 @@
 
 # Creates a log file at /tmp/script.log
 log_folder="/tmp"
-log_folder="$log_folder/script.log"
+log_file="$log_folder/script.log"
 error_log_file="$log_folder/script-errors.log"
 mkdir -p "$log_folder"
 
