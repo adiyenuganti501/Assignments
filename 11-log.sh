@@ -17,5 +17,7 @@ ls /tmp >>"$log_file" 2>>"$error_log_file"
 ls /fakedir >>"$log_file" 2>>"$error_log_file"
 date >>"$log_file" 2>>"$error_log_file"
 
+echo "SUCCESS"
 cat "$log_file"
+echo "FAIL"
 cat "$error_log_file"
