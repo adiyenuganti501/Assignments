@@ -24,6 +24,7 @@ if [ "$#" -eq 0 ] ; then
 fi
 
 mkdir -p "$log_folder"
+touch "$log_file"
 
 section(){
     echo "==============================================="
