@@ -28,3 +28,6 @@ section(){
     echo "$!" | tee -a $log_file
     echo "==============================================="
 }
+
+start_time=$(date "+%F %T")
+
