@@ -14,3 +14,17 @@
 # Uptime
 # Logs everything to /tmp/system-info.log
 # Prints total script execution time at the end
+
+Log_folder=/var/log
+log_file=$log_folder/${0}.log
+
+if [ $# -eq 0 ] ; then
+ echo "Usage:: ${0} <server-name>"
+ exit 
+fi
+
+section(){
+    echo "==============================================="
+    echo "$!" | tee -a $log_file
+    echo "==============================================="
+}
